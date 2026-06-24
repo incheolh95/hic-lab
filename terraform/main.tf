@@ -75,7 +75,7 @@ resource "aws_security_group" "nginx_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-
+  
 resource "aws_instance" "nginx" {
   ami                    = data.aws_ami.amazon_linux_2023.id
   instance_type          = "t2.micro"
